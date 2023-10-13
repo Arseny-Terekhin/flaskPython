@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Hellow</title>
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Менеджер задач</h1>
+    <form method="post" >
+        <label for="name" >Название задачи</label>
+        <input type="text" name="name" id="name" class="form-control" value="{{key}}"><br>
+        <label for="str">Текс звдвчи</label>
+        <input type="text" name="str" id="str" class="form-control" value="{{value}}"><br>
+        <input type="submit" class="btn btn-success" value="Сохранить">
+        <br><br><br>
+        {% for key in dict %}
+        <div class="alert alert-info">
+            <h2>{{key}}</h2>
+            <p>{{dict[key]}}</p>
+            <a href="/base/delete/{{key}}" class="btn btn-success">Удалить</a>
+            <a href="/base/{{key}}/{{dict[key]}}" class="btn btn-success">Изменить</a>
+        </div>
+        {% endfor %}
+
+    </form>
+</div>
+</body>
+</html>
