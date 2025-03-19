@@ -1,13 +1,13 @@
 ## Внешний вид проекта
 
 /login
-
+![img_1.png](image/img_1.png)
 
 /registration
-
+![img.png](image/1.png)
 
 /base
-
+![img.png](image/img.png)
 
 ## Дополнмительная информация для паботы с сайтом
 в проекте имеется только 3 html файла. Основные методы завящанны с файлом view.html.
