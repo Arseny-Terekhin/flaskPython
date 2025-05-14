@@ -15,3 +15,6 @@
 
 
 
+
+![Tests](https://github.com/Arseny-Terekhin/flaskPython/actions/workflows/ci.yml/badge.svg)
+![Build](https://github.com/Arseny-Terekhin/flaskPython/actions/workflows/build.yml/badge.svg)
